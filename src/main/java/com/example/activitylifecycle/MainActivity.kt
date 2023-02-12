@@ -1,0 +1,23 @@
+                                 package com.example.activitylifecycle
+
+import android.content.Context
+import android.content.SharedPreferences
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+class MainActivity : AppCompatActivity() {
+    var titlename: String? ="hoorayyy"
+    lateinit var sharedPreferences: SharedPreferences
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        sharedPreferences=getSharedPreferences(getString(R.string.preference_file_name),Context.MODE_PRIVATE)
+        setContentView(R.layout.scroll_veiw)
+       /* if(intent!=null)
+        {
+            titlename= intent.getStringExtra("Name")
+        }*/
+        titlename =sharedPreferences.getString("Title","FAMILY")
+        title=titlename
+    }
+
+}

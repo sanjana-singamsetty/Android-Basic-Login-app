@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ActivityLifecycle</string>
+    <string name="new_app_name">ThePeople</string>
+    <string name="forgot_password">Forgot your password</string>
+    <string name="register_yourself">Register yourself</string>
+    <string name="preference_file_name">Family Prefernces</string>
+</resources>

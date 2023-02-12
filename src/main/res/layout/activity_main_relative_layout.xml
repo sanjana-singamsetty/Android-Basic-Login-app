@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtheader"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:padding="8dp"
+        android:text="Out of all avengers "
+        android:textColor="#9c27b0"
+        android:textSize="26sp"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:padding="5dp"
+        android:text="-Tony stark was the bravest"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_below="@+id/txtheader"
+        />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/tony_stark_new"
+
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRESS KARO"
+        android:layout_margin="20dp"
+        android:background="#00b0ff"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"/>
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer  YES OR NO"
+        android:layout_margin="20dp"
+        android:inputType="text"
+        android:layout_below="@+id/msg"/>
+
+</RelativeLayout>
